@@ -23,6 +23,7 @@ jobs:
     - name: Limits Heap Out
       run: |
         export NODE_OPTIONS=--max_old_space_size=4096
+        export GOOGLE_APPLICATION_CREDENTIALS=/home/runner/work/fastlane-semongko/fastlane-semongko/android/semongko.json
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
