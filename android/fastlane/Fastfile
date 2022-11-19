@@ -28,7 +28,7 @@ platform :android do
       build_type: 'Release'
     )
     firebase_app_distribution(
-      # service_credentials_file: "/Users/razinsurya/Downloads/semongko-18308-4e83d4ce2bc5.json",
+      service_credentials_file: "/home/runner/work/fastlane-semongko/fastlane-semongko/android/semongko.json",
       app: "1:6837675287:android:d8dd1e7a2a5d3be824c352",
       groups: "cobaaja",
       debug: "true"
