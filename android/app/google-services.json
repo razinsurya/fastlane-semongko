@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "6837675287",
+    "project_id": "semongko-18308",
+    "storage_bucket": "semongko-18308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6837675287:android:d8dd1e7a2a5d3be824c352",
+        "android_client_info": {
+          "package_name": "com.semongko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6837675287-5k24at2j6pfc2o8evg2dkddc8krcpojb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtID95x1Az2Owkz5h5uxUxD3tqc7x_FuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6837675287-5k24at2j6pfc2o8evg2dkddc8krcpojb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

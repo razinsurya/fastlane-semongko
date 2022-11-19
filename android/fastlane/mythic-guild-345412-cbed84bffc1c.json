@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mythic-guild-345412",
+  "private_key_id": "cbed84bffc1c504aae269d4dcc1adb0162cd5bae",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCb8zfEhnQrK0JK\n7LsOJxRH4xsclrFr1Fp/As1OGFfU7fg7YMoc/6MsT5HaHd3EUsWCDvkcqtwBCjJ7\nr3P2OO1eOHDOMbwyRnYVRhXNtQFdJu7fSUs7WLWlNKrF2GF9+7sxC+4sMIAC7v98\nqEwRZ3m/AY29TGX0bMwSuRkXVYIwMTPVtj4OUMa1wBSywa3ffzf4PEEYQPWgKG3J\nGZZnyu+4+KeKgtJXKn2iRp/NZiFQk6PpWsQKgpp1iZNlNm83IzxQi59GzZ+q6zNd\nOxRmwceTLtbd6B3ws96e0kPVBliffQJXLXe270f2EYDcj6NfssR61wlx1VEjRs9v\nHWZGmDRDAgMBAAECggEABJPxXVEEbvylml/Jppg0wF7P0xkvWyF63e3zSz7BW/b3\ntFKFNwW1a1297n+1nLJAqa6OgdjC0uWoPA5B+AaNcphzOJz9enesDA19zVyUuNXQ\nPvi+qcl9sjxSDl2+5ZJdWTVm8qAihIjch3MZ9zbTkZerlVTSoggMPjkgc0QSKXT0\nidSvWhvTRFqF93t6QORA7yVNxI92QqnBrj9Sare55qcQF16dMv3PeT3xKfPCeqiV\nfcV6m+Eaxo980miSR1RQ2dyDjWWt1piOv/+KjDW0KX3nveviwLO9B2oBhtXqzTI2\n4bh+flm4n+eXQr6pxGV0FCnrpsHXO54I36mFftk6fQKBgQDWaxST7fCZJ0UMe43n\na0TJ5HMvOCThHPw49mNhjc+NwLylaQ0GViVejGNL5pHpeDpAzpgcX3lcayr6wr8O\nhDgCr7WB7pQmRBM8vpq3C9fxbbLM2HB55trDJoyh+is8Vq6kmU+MK7XnxP++uwH5\n41PIec+jxeK5wyVRwVArdf8G5QKBgQC6MXMAATba1MpXlvlZbCeOvJKAXKFktp+N\nbGeQVIpZHVfJeZzBH2y4IOZEi+Ms2xGTwpAJ5BJQjy4s3RjJPJvv6Eod44P7o2zo\no92z54hQoaCwu90rn2rUeugSRhf+LIFD6bqsSnVIHKMRgXBRrOlPwSgRU9XwUIxp\neIWj+k60BwKBgGqYf3lvcA5jtHMZNZnX/TG1jgHqkoMLiuSysQN9obKiH+bHy/7b\ncuaHOpIwRVfhOmyfiIWKfWYRrSNPD/aiisnjGoRG3IYNj9bCF15q1+chlyM5culX\neGhOUNnx6e6sVVRlF2PjEyLvEAl9JOVbO3rN/Ak6RpX9Sx9S0I1asvd1AoGAWL1m\npPLvNP7D7VkMQH1WoSXo4PrFBR4xDxNCjLxuL6jXhTPL7RNQGrW7aaIORPun9fd9\n9OjZfcGv7Tv3KzoSzBW29WXRKqaqKnqnGK5Z/qv5zSHMeJUDMn/diZAUsVR+y2Jj\nUOgv242ifp5lbNfvXs6djRya021gbog9kXij+BMCgYBGoLZQrYvUyYlGwaTfbJMI\nNdb7GrCWocdYIcAKZ3dTXYrfdpBq23oQjEhz7OICnU9Ec26msXIYRIJvGvCrdrre\net3iPUYtnJiu4nGl2PhZ3RWXud/hDkKcHy/aHpXnc/SAvETUNCXVVSb6TiAPlNOI\nQq3U8acz3YTVD8cQmw2thA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-semongko@mythic-guild-345412.iam.gserviceaccount.com",
+  "client_id": "108269116347327540600",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-semongko%40mythic-guild-345412.iam.gserviceaccount.com"
+}
