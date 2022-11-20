@@ -20,7 +20,7 @@ platform :ios do
   desc "Test Fastlane"
   lane :tests do
     run_tests(workspace: "semongko.xcworkspace",
-              devices: ["iPhone 11", "iPhone 14"],
+              devices: ["iPhone 14"],
               scheme: "semongkotest")
   end
 
