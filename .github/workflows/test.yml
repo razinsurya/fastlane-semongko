@@ -3,7 +3,7 @@ name: android-staging-automation
 on:
   push:
     branches: 
-    - 'master'
+    - 'xxxx'
 
 jobs:
   android-staging-automation:
