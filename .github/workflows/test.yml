@@ -78,31 +78,31 @@ jobs:
       with:
         name: apk-manifest
         path: android/app/build/outputs/apk/release/
-    - id: slack-finish-notif
-      uses: slackapi/slack-github-action@v1.23.0
-      with:
-        # The following message update step does not accept a channel name.
-        # Setting a channel ID here for consistency is highly recommended.
-        channel-id: "C047A336X0X"
-        payload: |
-          {
-            "text": "[DEV-Android] Semongko App Release",
-            "attachments": [
-              {
-                "pretext": "GitHub Action FINISHED",
-                "color": "dbab09",
-                "fields": [
-                  {
-                    "title": "App Release Status",
-                    "short": true,
-                    "value": "Semongko app release to Firebase App Distribution Uploaded"
-                  }
-                ]
-              }
-            ]
-          }
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN}}
+    # - id: slack-finish-notif
+    #   uses: slackapi/slack-github-action@v1.23.0
+    #   with:
+    #     # The following message update step does not accept a channel name.
+    #     # Setting a channel ID here for consistency is highly recommended.
+    #     channel-id: "C047A336X0X"
+    #     payload: |
+    #       {
+    #         "text": "[DEV-Android] Semongko App Release",
+    #         "attachments": [
+    #           {
+    #             "pretext": "GitHub Action FINISHED",
+    #             "color": "dbab09",
+    #             "fields": [
+    #               {
+    #                 "title": "App Release Status",
+    #                 "short": true,
+    #                 "value": "Semongko app release to Firebase App Distribution Uploaded"
+    #               }
+    #             ]
+    #           }
+    #         ]
+    #       }
+    #   env:
+    #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN}}
     - name: Post Result to a Slack channel
       if: success() || failure()
       id: slack-manifest
