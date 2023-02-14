@@ -14,31 +14,31 @@ jobs:
     env: 
       FIREBASE_APP_DIST: ${{ secrets.FIREBASE_APP_DIST }}
     steps:
-    - id: slack-start-notif
-      uses: slackapi/slack-github-action@v1.23.0
-      with:
-        # The following message update step does not accept a channel name.
-        # Setting a channel ID here for consistency is highly recommended.
-        channel-id: "C047A336X0X"
-        payload: |
-          {
-            "text": "[DEV-Android] Semongko App Release",
-            "attachments": [
-              {
-                "pretext": "GitHub Action STARTED",
-                "color": "dbab09",
-                "fields": [
-                  {
-                    "title": "App Release Status",
-                    "short": true,
-                    "value": "Semongko app release to Firebase App Distribution in Progress"
-                  }
-                ]
-              }
-            ]
-          }
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN}}
+    # - id: slack-start-notif
+    #   uses: slackapi/slack-github-action@v1.23.0
+    #   with:
+    #     # The following message update step does not accept a channel name.
+    #     # Setting a channel ID here for consistency is highly recommended.
+    #     channel-id: "C047A336X0X"
+    #     payload: |
+    #       {
+    #         "text": "[DEV-Android] Semongko App Release",
+    #         "attachments": [
+    #           {
+    #             "pretext": "GitHub Action STARTED",
+    #             "color": "dbab09",
+    #             "fields": [
+    #               {
+    #                 "title": "App Release Status",
+    #                 "short": true,
+    #                 "value": "Semongko app release to Firebase App Distribution in Progress"
+    #               }
+    #             ]
+    #           }
+    #         ]
+    #       }
+    #   env:
+    #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN}}
     - name: checkout source code
       uses: actions/checkout@v3
     - name: Limits Heap Out
@@ -78,41 +78,41 @@ jobs:
       with:
         name: apk-manifest
         path: android/app/build/outputs/apk/release/
-    - id: slack-finish-notif
-      uses: slackapi/slack-github-action@v1.23.0
-      with:
-        # The following message update step does not accept a channel name.
-        # Setting a channel ID here for consistency is highly recommended.
-        channel-id: "C047A336X0X"
-        payload: |
-          {
-            "text": "[DEV-Android] Semongko App Release",
-            "attachments": [
-              {
-                "pretext": "GitHub Action FINISHED",
-                "color": "dbab09",
-                "fields": [
-                  {
-                    "title": "App Release Status",
-                    "short": true,
-                    "value": "Semongko app release to Firebase App Distribution Uploaded"
-                  }
-                ]
-              }
-            ]
-          }
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN}}
-    - name: Post Result to a Slack channel
-      if: success() || failure()
-      id: slack-manifest
-      uses: slackapi/slack-github-action@v1.23.0
-      with:
-        # Slack channel id, channel name, or user id to post message.
-        # See also: https://api.slack.com/methods/chat.postMessage#channels
-        # You can pass in multiple channels to post to by providing a comma-delimited list of channel IDs.
-        channel-id: 'C047A336X0X'
-        # For posting a simple plain text message
-        slack-message: "[DEV-Android] Semongko App Release result:  ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    # - id: slack-finish-notif
+    #   uses: slackapi/slack-github-action@v1.23.0
+    #   with:
+    #     # The following message update step does not accept a channel name.
+    #     # Setting a channel ID here for consistency is highly recommended.
+    #     channel-id: "C047A336X0X"
+    #     payload: |
+    #       {
+    #         "text": "[DEV-Android] Semongko App Release",
+    #         "attachments": [
+    #           {
+    #             "pretext": "GitHub Action FINISHED",
+    #             "color": "dbab09",
+    #             "fields": [
+    #               {
+    #                 "title": "App Release Status",
+    #                 "short": true,
+    #                 "value": "Semongko app release to Firebase App Distribution Uploaded"
+    #               }
+    #             ]
+    #           }
+    #         ]
+    #       }
+    #   env:
+    #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN}}
+    # - name: Post Result to a Slack channel
+    #   if: success() || failure()
+    #   id: slack-manifest
+    #   uses: slackapi/slack-github-action@v1.23.0
+    #   with:
+    #     # Slack channel id, channel name, or user id to post message.
+    #     # See also: https://api.slack.com/methods/chat.postMessage#channels
+    #     # You can pass in multiple channels to post to by providing a comma-delimited list of channel IDs.
+    #     channel-id: 'C047A336X0X'
+    #     # For posting a simple plain text message
+    #     slack-message: "[DEV-Android] Semongko App Release result:  ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+    #   env:
+    #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
