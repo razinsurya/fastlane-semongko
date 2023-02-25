@@ -4,6 +4,7 @@ on:
   push:
     branches: 
     - test-13
+    - dev
 
 jobs:
   android-staging-automation:
